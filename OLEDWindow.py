@@ -531,7 +531,7 @@ class OLEDWindow:
     
     def DrawText1616(self, x, y, mes, color):
         for c in mes:
-            self.drawImage(x, y, 16, 16, color, FONT_16x16,(ord(c)-32)*32)
+            self.DrawImage(x, y, 16, 16, color, FONT_16x16,(ord(c)-32)*32)
             if ord(c) == 32 or ord(c) == 46:        # <Space> or .
                 x += 5
             elif ord(c) == 73 or ord(c) == 105:     # I or i
