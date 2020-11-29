@@ -29,7 +29,7 @@ class OLED:
         GPIO.setup(24,GPIO.OUT)   # 24 D/C
         self.spi = spidev.SpiDev()     # Init the spidev module
         self.spi.open(0,0)             # Open the spi device
-        self.spi.cshigh = False        # CS active low
+        # self.spi.cshigh = False      # CS active low
         self.spi.lsbfirst = False      # Send MSB first
         self.spi.mode = 3              # Clock idle high, data on 2nd edge (end of pulse)
         self.spi.max_speed_hz = 5000000
